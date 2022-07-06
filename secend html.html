@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>赵宇星的网站</title>
+    <style>
+      body {
+        background-color: #eee;
+        margin: 0;
+        height: 100vh;
+      }
+      /* * {
+        border: 1px solid #333;
+      }*/
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .daohang {
+        height: 50px;
+        font-size: 14;
+        border: bottom 1px solid #333;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .mag8 {
+        margin: 8px;
+      }
+      .mar8 {
+        margin-right: 8px;
+      }
+      .mat8 {
+        margin-top: 8px;
+      }
+      .shuJuqu {
+        height: 90px;
+        margin-right: 8px;
+        background-color: white;
+      }
+      .liebiao {
+        height: 160px;
+      }
+      .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--这是左侧-->
+    <div style="width: 200px" class="flex column baiSe">
+      <!--这是头像栏-->
+      <div
+        class="flex"
+        style="
+          justify-content: center;
+          align-items: center;
+          height: 65px;
+          border: bottom 1px solid #333;
+        "
+      >
+        <img
+          src="/good.jpg"
+          alt="没有图片"
+          style="width: 50px; height: 45px; padding: 10px 10px"
+        />
+        <div>赵宇星</div>
+      </div>
+      <!--这是导航栏-->
+      <div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+      </div>
+    </div>
+    <!--这是右侧-->
+    <div class="flex column flex1">
+      <!--这是顶部-->
+      <div style="height: 65px" class="baiSe yinYing"></div>
+      <!--这是内容区-->
+      <div class="flex flex1 mag8" style="overflow: auto">
+        <!--这是内容区左侧-->
+        <div class="flex column mar8" style="flex: 3">
+          <!--这是数据区-->
+          <div class="flex">
+            <div class="shuJuqu yinYing flex flex1"></div>
+            <div class="shuJuqu yinYing flex flex1"></div>
+            <div class="shuJuqu flex flex1 yinYing"></div>
+            <div
+              class="shuJuqu flex flex1 yinYing"
+              style="margin-right: 0"
+            ></div>
+          </div>
+          <!--这是列表区-->
+          <div class="flex column flex1">
+            <div class="liebiao baiSe mat8 yinYing"></div>
+            <div class="liebiao baiSe mat8 yinYing"></div>
+            <div class="liebiao baiSe mat8 yinYing"></div>
+            <div class="liebiao baiSe mat8 yinYing"></div>
+            <div class="liebiao baiSe mat8 yinYing"></div>
+            <div class="liebiao baiSe mat8 yinYing"></div>
+          </div>
+        </div>
+        <!--这是内容区右侧-->
+        <div class="flex column flex1">
+          <!--这是内右上-->
+          <div class="baiSe mar8 yinYing" style="height: 120px"></div>
+          <!--这是内右下-->
+          <div class="baiSe mat8 mar8 yinYing" style="height: 250px"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
